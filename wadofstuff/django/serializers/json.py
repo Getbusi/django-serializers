@@ -4,7 +4,7 @@ Serialize data to/from JSON
 try:
     import json
 except ImportError:
-    from django.utils import simplejson as json
+    import django.utils.simplejson as json
 
 from python import Serializer as PythonSerializer
 from django.core.serializers.json import Deserializer as JSONDeserializer, \
