@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-import wadofstuff.django.serializers
+import django.serializers
 
 README = open('README').read().strip() + "\n\n"
 ChangeLog = \
@@ -8,22 +8,20 @@ ChangeLog = \
     "==========\n" + \
     "\n" + \
     open('ChangeLog').read().strip()
-  
+
 LONG_DESCRIPTION = README + ChangeLog
 
 setup(
-    name='wadofstuff-django-serializers',
-    version=wadofstuff.django.serializers.__version__,
+    name='django-serializers',
+    version=django.serializers.__version__,
     description='Extended serializers for Django.',
     long_description=LONG_DESCRIPTION,
-    author='Matthew Flanagan',
-    author_email='mattimustang@gmail.com',
-url='https://github.com/mjtorn/wadofstuff-django-serializers/',
-    download_url='https://github.com/mjtorn/wadofstuff-django-serializers/tarball/master',
+    author='Getbusi',
+    author_email='info@getbusi.com',
+    url='https://github.com/Getbusi/django-serializers/',
+    download_url='https://github.com/Getbusi/django-serializers/tarball/modern-json',
     packages=(
-        'wadofstuff',
-        'wadofstuff.django',
-        'wadofstuff.django.serializers',
+        'django.serializers',
     ),
     keywords="django json serializer",
     classifiers=(
@@ -37,4 +35,3 @@ url='https://github.com/mjtorn/wadofstuff-django-serializers/',
         'Framework :: Django',
     ),
 )
-
